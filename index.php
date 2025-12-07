@@ -10,7 +10,6 @@ if (file_exists($maintenance = __DIR__.'/core/storage/framework/maintenance.php'
 }
 
 require __DIR__.'/core/vendor/autoload.php';
-
 $app = require_once __DIR__.'/core/bootstrap/app.php';
 
 $app->handleRequest(Request::capture());
